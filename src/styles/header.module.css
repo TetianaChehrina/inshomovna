@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(116, 76, 194);
+  box-shadow: 0 5px 10px rgb(207, 195, 227);
+  z-index: 10000;
+  padding: 20px 0px 20px 0px;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .header_container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 25px 0px 25px 0px;
+  }
+}
