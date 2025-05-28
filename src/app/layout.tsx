@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import AOSProvider from "@/providers/AOS.Provider";
+import Header from "@/components/Header";
+import SessionProvider from "@/providers/SessionProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Inshomovna",
-  description: "Language school",
+  title: "Learn English Online | Inshomovna Language School",
+  description:
+    "Join Inshomovna - an interactive language school offering certified English courses for all levels.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -23,9 +22,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang="uk">
+      <body className={inter.className}>
+        <SessionProvider>
+          <AOSProvider />
+          <Header />
+          <main>{children}</main>
+        </SessionProvider>
       </body>
     </html>
   );

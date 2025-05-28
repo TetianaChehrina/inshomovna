@@ -1,11 +1,10 @@
+import Container from "@/components/Container";
 import css from "./page.module.css";
+
 export default function Home() {
-  console.log("Test CI run");
   return (
-    <>
-      <main className={css.page_Home}>
-        <p>HomePage</p>
-      </main>
-    </>
+    <Container>
+      <p className={css.page_home}>HomePage</p>
+    </Container>
   );
 }

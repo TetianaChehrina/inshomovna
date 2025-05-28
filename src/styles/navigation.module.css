@@ -1,0 +1,91 @@
+.navigation {
+  position: relative;
+  z-index: 1000;
+}
+
+.menu_icon {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  color: #111;
+}
+
+.nav_container {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 75%;
+  max-width: 300px;
+  height: 100vh;
+  background: #f0eaea;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 24px;
+  transition: right 0.3s ease-in-out;
+}
+
+.nav_container.open {
+  right: 0;
+}
+
+.close_icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  color: #000;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav_links a {
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 0;
+  display: block;
+  transition: color 0.3s;
+}
+
+.nav_links a:hover {
+  color: #b5b2bb;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu_icon,
+  .close_icon {
+    display: none;
+  }
+
+  .nav_container {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav_links {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .nav_links a {
+    font-size: 16px;
+    color: #000;
+  }
+}
