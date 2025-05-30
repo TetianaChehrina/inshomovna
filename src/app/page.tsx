@@ -1,10 +1,12 @@
-import Container from "@/components/Container";
 import css from "./page.module.css";
+import HeroSlider from "../components/HeroSlider";
 
 export default function Home() {
   return (
-    <Container>
-      <p className={css.page_home}>HomePage</p>
-    </Container>
+    <div>
+      <section className={css.hero_section}>
+        <HeroSlider />
+      </section>
+    </div>
   );
 }
