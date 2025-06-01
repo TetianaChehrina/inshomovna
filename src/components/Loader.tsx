@@ -1,17 +1,17 @@
 "use client";
 
-import { TailSpin } from "react-loader-spinner";
+import { ClipLoader } from "react-spinners";
 import styles from "../styles/loader.module.css";
 
 export default function Loader() {
   return (
     <div className={styles.wrapper} role="status" aria-label="Loading...">
-      <TailSpin
-        height={60}
-        width={60}
+      <ClipLoader
+        size={50}
         color="#a259ff"
-        ariaLabel="loading"
-        visible={true}
+        loading={true}
+        aria-label="Loading Spinner"
+        data-testid="loader"
       />
     </div>
   );
