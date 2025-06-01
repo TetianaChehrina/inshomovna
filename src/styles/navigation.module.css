@@ -16,15 +16,14 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 75%;
-  max-width: 300px;
+  width: 80vw;
   height: 100vh;
   background: #f0eaea;
   box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
   transition: right 0.3s ease-in-out;
@@ -66,6 +65,25 @@
   color: #b5b2bb;
 }
 
+@media screen and (min-width: 768px) {
+  .nav_container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40vw;
+    height: 100vh;
+    background: #f0eaea;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    transition: right 0.3s ease-in-out;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .menu_icon,
   .close_icon {
@@ -85,7 +103,7 @@
   }
 
   .nav_links a {
-    font-size: 16px;
-    color: #000;
+    font-size: 22px;
+    color: #fbf8f8;
   }
 }
