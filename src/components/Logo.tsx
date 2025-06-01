@@ -8,7 +8,7 @@ const Logo = () => {
       <Link href="/" className={styles.logo}>
         <Image
           src="/assets/logo-white.png"
-          alt="Inshomovna Logo"
+          alt="Logo"
           width={70}
           height={70}
           priority

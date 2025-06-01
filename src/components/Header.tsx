@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Container>
-        <div className={styles.header_container}>
+        <div className={styles.header_container} data-aos="fade-left">
           <Logo />
           <Navigation />
         </div>

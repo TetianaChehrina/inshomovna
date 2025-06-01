@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(116, 76, 194);
+  background: var(--brand-color);
   box-shadow: 0 5px 10px rgb(207, 195, 227);
   z-index: 10000;
   padding: 20px 0px 20px 0px;

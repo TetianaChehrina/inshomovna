@@ -38,14 +38,15 @@ const Navigation = () => {
               Головна
             </Link>
           </li>
-          <li>
-            <a href="#courses" onClick={handleClose}>
-              Курси
-            </a>
-          </li>
+
           <li>
             <a href="#about" onClick={handleClose}>
               Про школу
+            </a>
+          </li>
+          <li>
+            <a href="#courses" onClick={handleClose}>
+              Курси
             </a>
           </li>
           <li>

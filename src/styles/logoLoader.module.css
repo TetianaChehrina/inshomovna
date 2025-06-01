@@ -1,0 +1,48 @@
+.loader {
+  background-color: var(--brand-color);
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 0.6s ease-in-out 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.logo_video {
+  width: 80vh;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .logo_video {
+    width: 200vh;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logo_video {
+    width: 200vh;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo_video {
+    width: 200vh;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .logo_video {
+    width: 200vh;
+    height: 100vh;
+  }
+}

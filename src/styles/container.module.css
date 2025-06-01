@@ -18,3 +18,21 @@
     max-width: 1320px;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .container {
+    max-width: 1800px;
+  }
+}
