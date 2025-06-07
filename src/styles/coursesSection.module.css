@@ -1,0 +1,35 @@
+.section {
+  min-height: calc(100vh - 120px);
+  padding: 110px 0;
+  background-color: var(--black-main);
+  color: var(--text-white);
+}
+
+.heading {
+  font-size: 48px;
+  font-family: var(--font-text-1);
+  text-align: center;
+  margin-bottom: 82px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 58px;
+    font-family: var(--font-text-1);
+    text-align: center;
+    margin-bottom: 82px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading {
+    font-size: 78px;
+  }
+}

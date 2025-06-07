@@ -1,12 +1,16 @@
-import css from "./page.module.css";
+import styles from "./page.module.css";
 import HeroSlider from "../components/HeroSlider";
 import WhyUsSection from "../components/WhyUsSection";
+import OurMissionSection from "@/components/OurMissionSection";
+import CoursesSection from "@/components/CoursesSection";
 
 export default function Home() {
   return (
-    <section className={css.hero_section} data-aos="fade-up">
+    <div className={styles.home_page}>
       <HeroSlider />
       <WhyUsSection />
-    </section>
+      <OurMissionSection />
+      <CoursesSection />
+    </div>
   );
 }
