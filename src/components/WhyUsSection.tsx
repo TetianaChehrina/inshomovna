@@ -37,8 +37,16 @@ export default function WhyUsSection() {
     <section id="why-us" className={styles.section}>
       <Container>
         <h2 className={styles.heading} data-aos="fade-in">
-          {data.heading}
+          <span className={styles.line}></span>
+          <span className={styles.white}>
+            {data.heading.split(" ")[0]}
+          </span>{" "}
+          <span className={styles.purple}>
+            {data.heading.split(" ").slice(1).join(" ")}
+          </span>
+          <span className={styles.line}></span>
         </h2>
+
         <ul className={styles.list}>
           {data.benefits.map((benefit, index) => (
             <li
