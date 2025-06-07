@@ -1,6 +1,6 @@
 .section {
-  min-height: calc(100vh - 120px);
-  padding: 50px 0;
+  min-height: calc(100vh - 50px);
+  padding: 40px 0;
   background-color: var(--black-main);
   color: var(--text-white);
   display: flex;
@@ -8,11 +8,35 @@
 }
 
 .heading {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.white {
   color: var(--text-white);
+}
+
+.purple {
+  color: var(--brand-color);
+}
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--text-white) 0%,
+    var(--text-white) 100%
+  );
+  max-width: 150px;
 }
 
 .list {
@@ -50,6 +74,10 @@
     font-size: 34px;
   }
 
+  .line {
+    max-width: 600px;
+  }
+
   .item {
     flex-direction: row;
     justify-content: space-between;
@@ -70,6 +98,10 @@
 @media screen and (min-width: 1440px) {
   .heading {
     font-size: 48px;
+  }
+
+  .line {
+    max-width: 800px;
   }
 
   .label {
